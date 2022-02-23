@@ -8,8 +8,8 @@ $("document").ready(function () {
         'itant eate anot eat nato inate eat anot tain eat',
         'nee ene ate ite tent tiet ent ine ene ete ene ate'
     ];
-    sentenceCount = 4;
-    letterCount = 45;
+    sentenceCount = 0;
+    letterCount = 0;
     let rightCount = 0;
     let wrongCount = 0;
     let startTime = 0;
@@ -155,6 +155,7 @@ $("document").ready(function () {
         yellowBlock();
         $("#target-letter").empty();
         $("#target-letter").append("'" + sentences[sentenceCount].charAt(letterCount) + "'");
+        $("#feedback").empty();
         $("#target-button").empty();
         $(".keyboard-container").css("margin-top", "200px");
         start();
